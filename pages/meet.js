@@ -164,8 +164,8 @@ export default function Meet() {
 
                 {lobbyPeers[0] && <h2>Lobby Peers</h2>}
                 <div>
-                  {lobbyPeers.map((peer) => (
-                    <div>{peer.peerId}</div>
+                  {lobbyPeers.map((peer, index) => (
+                    <div key={index}>{peer.peerId}</div>
                   ))}
                 </div>
 
